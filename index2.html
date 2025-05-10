@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Incident Reporting Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cyber Incident Reporting Tool</h1>
+  <form id="incidentForm">
+    <label>Date of Incident:
+      <input type="date" required>
+    </label><br><br>
+
+    <label>Was sensitive customer data exposed?
+      <select id="dataExposed">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label><br><br>
+
+    <label>Was malware or a virus detected?
+      <select id="malware">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label><br><br>
+
+    <label>Did the incident affect operations for more than 1 hour?
+      <select id="downtime">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label><br><br>
+
+    <button type="submit">Assess Risk</button>
+  </form>
+
+  <div id="result" style="margin-top: 20px;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
